@@ -44,7 +44,7 @@ var canvas = document.getElementById( 'canvas' ),
 		ctx = canvas.getContext( '2d' ),
 		// full screen dimensions
 		cw = window.innerWidth,
-		ch = window.innerHeight,
+		ch = window.innerHeight/2,
 		// firework collection
 		fireworks = [],
 		// particle collection
@@ -329,7 +329,7 @@ myElement.innerHTML = '<h1>Happy Birthday '+theNewName+'!</h1>';
 eh=myElement.clientHeight;
 //console.log(eh);
 
-myElement.style.top =((ch/2)-(eh/2))+'px'; 
+myElement.style.top =((eh+ch))+'900px'; 
 
 
 //fade in/fade out code from here: http://codereview.stackexchange.com/questions/7315/fade-in-and-fade-out-in-pure-javascript
